@@ -18,7 +18,7 @@ export class TasksService {
 
   private buildTask(title: string, description: string): Task {
     return {
-      id: uuid,
+      id: uuid(),
       title,
       description,
       status: TaskStatus.OPEN,
